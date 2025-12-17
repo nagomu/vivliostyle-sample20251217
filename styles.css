@@ -1,0 +1,81 @@
+@page {
+  size: JIS-B5;
+  margin-top: 20mm;
+  margin-bottom: 20mm;
+}
+
+@page :right {
+  margin-right: 20mm;
+  margin-left: 25.206375mm;
+}
+
+@page :left {
+  margin-right: 25.206375mm;
+  margin-left: 20mm;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hiragino Mincho ProN", ui-serif, serif;
+  font-size: 8.25pt;
+  font-weight: normal;
+  line-break: loose;
+  text-align: justify;
+  text-justify: inter-character;
+  text-rendering: geometricPrecision;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
+
+.bundle {
+  height: 217mm;
+  column-count: 2;
+  column-fill: auto;
+  column-gap: 11.68mm;
+  column-rule: 0.5mm dashed rgb(0, 0, 0, 0.1);
+  column-width: 102.66mm;
+}
+
+.topicName {
+  margin: 0;
+  padding: 1em;
+  border: 0.15mm solid #000;
+  border-radius: 0.2rem;
+  font-family: "Noto Sans JP", ui-sans-serif, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.chapterName {
+  margin-top: 2em;
+  font-family: "Noto Sans JP", ui-sans-serif, sans-serif;
+  font-weight: bold;
+  text-orientation: sideways;
+}
+
+.chapterBody {
+  hanging-punctuation: allow-end;
+}
+
+.chapterBody p {
+  margin: 0;
+  line-height: 1.75;
+  text-indent: 1em;
+}
+
+.chapterBody hr {
+  width: 1.5rem;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.chapter:nth-of-type(3) {
+  break-before: column;
+}
